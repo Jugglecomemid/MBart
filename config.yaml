@@ -1,0 +1,13 @@
+name: 'MBart Translation'
+description: 'Mbart Model'
+tags: ['translation']
+command: 'bash run.sh'
+priority: 1
+is_parent: False
+resources:
+  cluster: simcloud-mr2.apple.com
+  docker_image: docker.apple.com/turibolt/turibolt-python3:latest
+  num_gpus: 1
+  num_cpus: 2
+  disk_gb: 32
+  timeout: 5d
